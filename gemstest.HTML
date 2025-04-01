@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>GEMS Collectables - Mobile Mockup</title>
+  
+  <!-- Font Awesome for social icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-p1Cm+NuW+K2KX5+07ScifNkI0+I+h1Tx3vS0ZkqWeQ/nLh9sGJNx8uCzURcTEzI4W1c4BZB4TtJl7+V4f3u8mw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  
+  <!-- Google Fonts: Lucky Guy for heading -->
+  <link href="https://fonts.googleapis.com/css2?family=Lucky+Guy&display=swap" rel="stylesheet">
+  
+  <!-- Pokémon-like pixel font for social links -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+    rel="stylesheet"
+  />
+  
+  <style>
+    /* Mobile device frame simulation */
+    .mobile-frame {
+      width: 360px;
+      height: 640px;
+      border: 16px solid #333;
+      border-radius: 40px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+      overflow: hidden;
+      background: #fff;
+      margin: auto;
+      position: relative;
+    }
+    
+    /* ---------- Base Styles ---------- */
+    body {
+      background: #000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      margin: 0;
+    }
+    
+    .container {
+      background: #3b4cca; /* Pokémon blue */
+      border: 3px solid #ffd700; /* Gold border */
+      border-radius: 12px;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      padding: 1.5rem;
+      box-sizing: border-box;
+    }
+    
+    .logo {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 1rem;
+      border: 3px solid #ffd700;
+    }
+    
+    /* Heading using Lucky Guy in lowercase, bold, solid color #f5cd73 */
+    .gradient-text {
+      font-family: 'Lucky Guy', cursive;
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #f5cd73;
+      margin-bottom: 0.5rem;
+      text-transform: lowercase;
+    }
+    
+    .social-links {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    
+    .social-links a {
+      font-family: 'Press Start 2P', cursive;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      color: #fff;
+      padding: 0.6rem;
+      border-radius: 8px;
+      font-size: 0.7rem;
+      transition: 0.3s ease;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    }
+    
+    .social-links a i {
+      margin-right: 0.5rem;
+      font-size: 1rem;
+    }
+    
+    .social-links a:hover {
+      transform: translateY(-2px);
+      opacity: 0.9;
+    }
+    
+    /* Social Buttons Styles */
+    .instagram { 
+      background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); 
+    }
+    .tiktok { 
+      background: linear-gradient(to right, #69C9D0, #EE1D52); 
+    }
+    .tcgplayer { 
+      background: #0073e6; 
+    }
+    .whatnot { 
+      background: #ffcb05; 
+      color: #000 !important; 
+    }
+    
+    /* Responsive adjustments for smaller devices */
+    @media (max-width: 360px) {
+      .mobile-frame {
+        width: 320px;
+        height: 570px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="mobile-frame">
+    <div class="container">
+      <img src="PATH_TO_LOGO.png" alt="GEMS Logo" class="logo" />
+      <h1 class="gradient-text">@gemscollectables</h1>
+      <div class="social-links">
+        <a href="https://www.instagram.com/yourcompany" target="_blank" class="instagram">
+          <i class="fab fa-instagram"></i> Instagram
+        </a>
+        <a href="https://www.tiktok.com/@yourcompany" target="_blank" class="tiktok">
+          <i class="fab fa-tiktok"></i> TikTok
+        </a>
+        <a href="https://www.tcgplayer.com/yourcompany" target="_blank" class="tcgplayer">
+          <i class="fas fa-dharmachakra"></i> TCG Player
+        </a>
+        <a href="https://www.whatnot.com/yourcompany" target="_blank" class="whatnot">
+          <i class="fas fa-star"></i> Whatnot
+        </a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
